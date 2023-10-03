@@ -13,14 +13,14 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/favicon-4b6086f1.png" type="image/x-icon" />
     <title>About Us - PT. Adi Saka Mandiri</title>
-    <script type="module" crossorigin src="/assets/main-84870424.js"></script>
-    <link rel="stylesheet" href="/assets/main-b50b4b50.css">
+    <script type="module" crossorigin src="/assets/main-859a09c8.js"></script>
+    <link rel="stylesheet" href="/assets/main-5d8f84d5.css">
   </head>
   <body class="font-inter bg-green-50">
     <!-- Header Start -->
     <header
       id="otherHeader"
-      class="top-0 left-0 flex items-center w-full py-5 mx-auto duration-500 bg-transparent navbar-fixed linear navbar-white"
+      class="top-0 left-0 flex items-center w-full py-5 mx-auto duration-500 bg-transparent navbar-fixed linear navbar-white fixed z-[1000]"
     >
       <div class="container mx-auto">
         <div class="relative flex items-center justify-between px-4">
@@ -47,7 +47,7 @@
               id="hamburger"
               name="hamburger"
               type="button"
-              class="absolute block right-4 lg:hidden"
+              class="absolute block right-4 lg:hidden z-[2000]"
             >
               <span
                 class="transition duration-300 origin-top-left hamburger-line"
@@ -61,34 +61,34 @@
             <!-- Nav Start -->
             <nav
               id="nav-menu"
-              class="hidden font-semibold absolute py-1 bg-white shadow-xl rounded-xl max-w-[300px] w-full right-4 top-full lg:static lg:max-w-full lg:block lg:bg-transparent lg:shadow-none lg:opacity-100 text-slate-700 lg:text-slate-700 transition-opacity ease-in opacity-0"
+              class="fixed top-0 right-0 z-[1500] h-screen py-1 pt-20 font-semibold text-slate-700 transition-all duration-500 ease-in-out translate-x-full lg:h-auto lg:w-full lg:translate-x-0 lg:pt-0 w-60 bg-white lg:static lg:block lg:bg-transparent lg:shadow-none lg:opacity-100 lg:text-slate-700 border-l lg:border-none"
             >
               <ul id="nav-list" class="block text-lg lg:flex lg:text-xl">
                 <li class="group">
                   <a
                     href="index.html"
-                    class="flex py-2 mx-8 duration-300 ease-in text-dark group-hover:text-secondary"
+                    class="flex py-2 mx-8 duration-300 ease-in border-b lg:border-none text-dark border-b-accent group-hover:text-secondary"
                     >Home</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="product.html"
-                    class="flex py-2 mx-8 duration-300 ease-in text-dark group-hover:text-secondary"
+                    class="flex py-2 mx-8 duration-300 ease-in border-b lg:border-none text-dark border-b-accent group-hover:text-secondary"
                     >Product</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="/about.html"
-                    class="flex py-2 mx-8 duration-300 ease-in text-dark group-hover:text-secondary"
+                    class="flex py-2 mx-8 duration-300 ease-in border-b lg:border-none text-dark border-b-accent group-hover:text-secondary"
                     >About</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="index.html#contact"
-                    class="flex py-2 mx-8 duration-300 ease-in text-dark group-hover:text-secondary"
+                    class="flex py-2 mx-8 duration-300 ease-in border-b lg:border-none text-dark border-b-accent group-hover:text-secondary"
                     >Contact</a
                   >
                 </li>
@@ -98,6 +98,9 @@
           </div>
         </div>
       </div>
+      <div
+        class="fixed top-0 left-0 hidden w-4/5 h-screen transition duration-300 ease-in opacity-0 z-[1200] lg:hidden filter-nav bg-black/90"
+      ></div>
     </header>
     <!-- Header End -->
     <!-- Main -->
