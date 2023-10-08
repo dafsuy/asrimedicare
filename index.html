@@ -29,8 +29,8 @@
       PT. ADI SAKA MANDIRI - Supplier Hospital Equiptment, Medical Equiptment,
       Medical Disposable Laboratory Products
     </title>
-    <script type="module" crossorigin src="/assets/main-2cb8e1d0.js"></script>
-    <link rel="stylesheet" href="/assets/main-6c70fcf4.css">
+    <script type="module" crossorigin src="/assets/main-5d7feb24.js"></script>
+    <link rel="stylesheet" href="/assets/main-586952b2.css">
   </head>
   <body class="font-inter bg-green-50">
     <!-- Header Start -->
@@ -1046,12 +1046,13 @@
             <div
               class="p-5 bg-white border-t-4 shadow-lg border-accent rounded-xl"
             >
-              <form action="">
+              <form id="form-wa" action="">
                 <div>
                   <label for="name" class="font-semibold text-slate-600"
                     >Name</label
                   >
                   <input
+                    id="name-form-wa"
                     type="text"
                     placeholder="Your Name"
                     name="name"
@@ -1063,6 +1064,7 @@
                     >Message</label
                   >
                   <textarea
+                    id="text-form-wa"
                     class="w-full form-textarea focus:ring-0 focus:border-secondary"
                     placeholder="Type Message"
                     name="text"
@@ -1073,8 +1075,10 @@
               <!-- Button Form -->
               <div class="mt-5">
                 <button
+                  id="submit-form-wa"
                   class="flex flex-row items-center gap-2 my-btn"
                   title="Send Message via Whatsapp"
+                  type="button"
                 >
                   <span>
                     <svg
@@ -1494,9 +1498,7 @@
           <p class="mt-5">&copy;2023 PT Adi Saka Mandiri All Rights Reserved</p>
         </div>
         <!-- End Sosmed -->
-        <div
-          class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10"
-        >
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
           <dir
             class="absolute m-auto w-[500px] bg-cover blur-sm opacity-20 aspect-square bg-footer-pattern -right-60 bottom-40 sm:bottom-0"
           ></dir>
