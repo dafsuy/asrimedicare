@@ -1,0 +1,1 @@
+import{h as c}from"./function-6453c3a9.js";c();const t=document.getElementById("increase-product"),n=document.getElementById("decrease-product"),e=document.getElementById("qty-form-order");t&&n&&e&&(n.addEventListener("click",()=>{e.value>1&&e.value--}),t.addEventListener("click",()=>{e.value++}));
