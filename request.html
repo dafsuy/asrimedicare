@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/dafsuy/adi-saka-mandiri/main/src/img/logo.png"
+    />
     <!-- Font Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,9 +17,9 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/favicon-4b6086f1.png" type="image/x-icon" />
     <title>Request For Quotation - PT. Adi Saka Mandiri</title>
-    <script type="module" crossorigin src="/assets/request-2415a260.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/function-aa7b5387.js">
-    <link rel="stylesheet" href="/assets/function-e1c33790.css">
+    <script type="module" crossorigin src="/assets/request-3cd8920f.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/function-8bc72f09.js">
+    <link rel="stylesheet" href="/assets/function-6c897ce1.css">
   </head>
   <body class="font-inter bg-green-50">
     <!-- Header Start -->
@@ -319,7 +323,7 @@
                   </a>
                 </div>
                 <p class="mt-5 text-sm">
-                  &copy;2023 PT Adi Saka Mandiri All. Rights Reserved.
+                  &copy;2023 PT Adi Saka Mandiri. All Rights Reserved.
                 </p>
               </div>
             </nav>
@@ -337,7 +341,7 @@
       <div class="container px-4 pt-20 mx-auto bg-white lg:pt-28">
         <section>
           <div class="flex justify-center max-w-2xl mx-auto">
-            <form class="flex flex-col w-full gap-8">
+            <form id="form-request" class="flex flex-col w-full gap-8">
               <!-- Name -->
               <div>
                 <label
@@ -412,7 +416,7 @@
                     id="type-of-product-form-order"
                     class="block w-full px-4 py-3 text-sm transition border-gray-300 rounded-md shadow-md input form-select peer-invalid:text-pink-600 peer text-slate-500 focus:border-green-500 focus:ring-green-500 invalid:text-pink-500"
                   >
-                    <option selected>Select Product</option>
+                    <option value="" selected>Select Product</option>
                     <option value="Electromedic">Electromedic</option>
                     <option value="Ambulance">Ambulance</option>
                     <option value="hvac">HVAC</option>
@@ -463,7 +467,7 @@
                 <textarea
                   type="text"
                   id="desc-form-order"
-                  class="block w-full h-40 px-4 py-3 text-sm transition border-gray-300 rounded-md shadow-md peer-invalid:text-pink-600 peer text-slate-500 focus:border-green-500 focus:ring-green-500 invalid:text-pink-500"
+                  class="block w-full h-40 px-4 py-3 text-sm transition border-gray-300 rounded-md shadow-md input peer-invalid:text-pink-600 peer text-slate-500 focus:border-green-500 focus:ring-green-500 invalid:text-pink-500"
                 ></textarea>
               </div>
               <!-- FIle Input -->
@@ -494,7 +498,7 @@
                 </div>
                 <button
                   id="submit-form-order"
-                  class="w-full px-4 py-2 font-bold text-white transition rounded-md bg-secondary hover:bg-green-700 active:scale-95"
+                  class="w-full px-4 py-2 font-bold text-white transition duration-1000 rounded-md bg-secondary hover:bg-green-700 active:scale-95"
                   type="button"
                 >
                   SUBMIT ORDER
@@ -752,7 +756,9 @@
               </svg>
             </a>
           </div>
-          <p class="mt-5">&copy;2023 PT Adi Saka Mandiri All. Rights Reserved.</p>
+          <p class="mt-5">
+            &copy;2023 PT Adi Saka Mandiri. All Rights Reserved.
+          </p>
         </div>
         <!-- End Sosmed -->
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
